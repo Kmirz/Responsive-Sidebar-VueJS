@@ -16,8 +16,15 @@
         <span class="text">Home</span>
       </router-link>
       <router-link class="button" to="/about">
-        <span class="material-icons material-icons-round"> home </span>
+        <span class="material-icons material-icons-round"> help_outline </span>
         <span class="text">About</span>
+      </router-link>
+    </div>
+    <div class="settings"></div>
+    <div class="menu">
+      <router-link class="button" to="/settings">
+        <span class="material-icons material-icons-round"> settings </span>
+        <span class="text">Settings</span>
       </router-link>
     </div>
   </aside>
@@ -45,7 +52,9 @@ aside {
   color: var(--light);
 
   transition: 0.2s ease-out;
-
+  .settings {
+    flex: 1 1 0;
+  }
   .logo {
     margin-bottom: 1rem;
     img {
@@ -56,38 +65,39 @@ aside {
   .menu-toggle-wrap {
     display: flex;
     justify-content: flex-end;
-    margin-bottom: 1rem;
+    margin-bottom: -1rem;
     position: relative;
 
     top: 0;
     transition: 0.2s ease-out;
 
     .menu-toggle {
+      margin-left: -100px;
       transition: 0.2s ease-out;
       .material-icons-round {
         font-size: 2rem;
-        color: white;
+        color: var(--light);
       }
     }
 
     .menu-toggle:hover {
       .material-icons-round {
         transform: scale(1.2);
-        color: green;
+        color: var(--primary);
       }
     }
   }
 
-  @media (max-width: 768px) {
-    position: fixed;
-    z-index: 99;
-  }
+  // @media (max-width: 768px) {
+  //   position: fixed;
+  //   z-index: 99;
+  // }
 }
 
 h3,
 .button .text {
   opacity: 0;
-  transition: 0.3s ease-out;
+  transition: 0.3s ease-in-out;
 }
 
 .menu {
@@ -96,10 +106,40 @@ h3,
     display: flex;
     align-items: center;
     text-decoration: none;
-
+    transition: 0.2s ease-in-out;
     padding: 0.5rem 1rem;
-    transition: 0.2 ease-out;
+    .material-icons {
+      font-size: 2rem;
+      color: var(--light);
+      transition: 0.2s ease-in-out;
+    }
+    .text {
+      color: var(--light);
+      transition: 0.2s ease-in-out;
+    }
+    &:hover {
+      background-color: var(--dark-alt);
+      .material-icons,
+      .text {
+        color: var(--primary);
+      }
+    }
+    &.router-link-exact-active {
+      background-color: var(--dark-alt);
+      border-right: 5px solid var(--primary);
+      .material-icons,
+      .text {
+        color: var(--primary);
+      }
+    }
   }
+}
+
+h3 {
+  color: var(--grey);
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
 }
 
 .is-expanded {
@@ -115,6 +155,12 @@ h3,
   h3,
   .button .text {
     opacity: 1;
+  }
+
+  .button {
+    .material-icons {
+      margin-right: 1rem;
+    }
   }
 }
 </style>
