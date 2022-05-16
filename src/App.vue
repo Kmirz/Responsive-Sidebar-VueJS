@@ -43,7 +43,7 @@ button {
     padding: 2rem;
 
     @media (max-width: 768px) {
-      position: fixed;
+      position: absolute;
       z-index: -1;
       padding-left: 6rem;
     }
