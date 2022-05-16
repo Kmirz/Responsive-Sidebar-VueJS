@@ -3,53 +3,83 @@
     <h1>Home</h1>
     <p>This is the homepage</p>
     <div class="container">
-      <div class="card-group" style="margin-bottom: 2rem; padding: 10px">
-        <div class="card" style="max-width: 18rem">
-          <img
-            src="https://cataas.com/cat?width=200?height=250"
-            class="card-img-top"
-            alt="..."
-            style="height: 15rem"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Cute Cat 1</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+      <div
+        class="
+          mb-4
+          row row-cols-1 row-cols-xl-4 row-cols-lg-3 row-cols-md-2
+          g-4
+        "
+      >
+        <div class="col">
+          <div class="card">
+            <img
+              src="https://cataas.com/cat?width=200?height=250"
+              class="card-img-top"
+              alt="Picutre of cat"
+              style="height: 15rem"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Cute Cat 1</h5>
+              <p class="card-text">
+                This is a longer card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+            </div>
           </div>
         </div>
-        <div class="card" style="max-width: 18rem">
-          <img
-            src="https://cataas.com/cat?width=200?height=260"
-            class="card-img-top"
-            alt="..."
-            style="height: 15rem"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Cute Cat 2</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+        <div class="col">
+          <div class="card">
+            <img
+              src="https://cataas.com/cat?width=200?height=150"
+              class="card-img-top"
+              alt="Picutre of cat"
+              style="height: 15rem"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Cute Cat 2</h5>
+              <p class="card-text">
+                This is a longer card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+            </div>
           </div>
         </div>
-        <div class="card" style="max-width: 18rem">
-          <img
-            src="https://cataas.com/cat?width=200?height=300"
-            class="card-img-top"
-            alt="..."
-            style="height: 15rem"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+        <div class="col">
+          <div class="card">
+            <img
+              src="https://cataas.com/cat?width=200?height=300"
+              class="card-img-top"
+              alt="Picutre of cat"
+              style="height: 15rem"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Cute Cat 3</h5>
+              <p class="card-text">
+                This is a longer card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="https://cataas.com/cat?width=200?height=400"
+              class="card-img-top"
+              alt="Picutre of cat"
+              style="height: 15rem"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Cute Cat 4</h5>
+              <p class="card-text">
+                This is a longer card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+            </div>
           </div>
         </div>
       </div>
