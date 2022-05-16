@@ -1,5 +1,6 @@
 <script setup>
 import Sidebar from "./components/Sidebar.vue";
+import * as bootstrap from "bootstrap";
 </script>
 
 <template>
